@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { rhythm } from '../utils/typography';
 
 const IndexPage = () => (
   <Layout>

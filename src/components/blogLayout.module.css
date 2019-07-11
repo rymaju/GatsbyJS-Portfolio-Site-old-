@@ -1,0 +1,23 @@
+.main {
+     margin: 0 auto;
+    padding-left: 4em;
+    padding-right: 4em;
+
+    /* max-width: 960px; */
+
+
+
+    /* display: grid;
+    grid-row-gap: 2em;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto 100px;
+*/
+
+}
+
+.container {
+    max-width: 100vw;
+    margin-left: 15.5vw;
+    margin-right: 15.5vw;
+
+}

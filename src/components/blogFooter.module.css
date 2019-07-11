@@ -1,0 +1,36 @@
+footer {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: solid lightgray;
+
+}
+
+.photoAndTextContainer {
+    display: inline-flex;
+    margin: 4em;
+    align-items: center;
+
+}
+
+.photo {
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+}
+
+.text {
+    padding: 10px;
+
+}
+
+.iconContainer {
+    display: flex;
+    margin-left: 4em;
+    justify-content: center;
+
+}
+
+.icon {
+    height:20px;
+}
