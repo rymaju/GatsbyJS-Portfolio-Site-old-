@@ -11,7 +11,8 @@ const BlogHeader = () => {
             </div>
             
             <div className={styles.nav}>
-                <h2>Projects | Blog | Twitter</h2>
+                <h2>
+                    <Link to='/'>Projects</Link> | <Link to='/blog/'>Blog</Link> | <Link to='/blog/about/'>About Me</Link></h2>
             </div>
         </header>
     );

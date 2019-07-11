@@ -1,18 +1,50 @@
 import React from 'react';
 import BlogLayout from "../../components/blogLayout";
+import { graphql, Link } from 'gatsby';
 
 //Blog index page that will display my blog posts sorted by date
 //you will be able to click on the posts and read them too!
 
-const BlogIndex = () => {
+const BlogIndex = ({data}) => {
     return(
         <BlogLayout>
-            <h2>Header</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis, ligula vitae dictum vestibulum, felis ex tincidunt diam, vel mollis lorem augue varius lectus. Nunc euismod tempus massa eget luctus. Nullam tempus orci quis quam ultrices consequat. Aliquam sollicitudin nec nunc in lobortis. Suspendisse eget orci eu sapien pharetra posuere at sit amet turpis. Vestibulum ac risus non massa eleifend ultrices. Nam commodo orci et libero ornare, nec cursus lectus pulvinar. Sed eget velit euismod, ultricies arcu vitae, volutpat odio. Suspendisse sed metus sit amet massa finibus porta in nec urna.
-
-Nullam pharetra risus at magna dapibus</p>
+            <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+            {data.allMarkdownRemark.edges.map(({node}) => (
+                <div key = {node.id}>
+                    <Link
+                        to={node.fields.slug}
+                    >
+                        <h2>{node.frontmatter.title} - {node.frontmatter.date}</h2>
+                    
+                        
+                    </Link>
+                    <p>
+                        {node.excerpt.slice(0,250)}
+                    </p>
+                </div>
+            ))}
         </BlogLayout>
     );
 }
 
 export default BlogIndex;
+
+export const query = graphql`
+    query{
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
+            totalCount
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        date(formatString: "MMMM DD, YYYY")                    }
+                    fields {
+                        slug
+                    }
+                    excerpt
+                }
+            }
+        }
+    }
+`;

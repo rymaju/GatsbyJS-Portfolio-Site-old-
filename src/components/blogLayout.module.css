@@ -14,6 +14,9 @@
 */
 
 }
+.main h2 {
+    margin-bottom: 5px;
+}
 
 .container {
     max-width: 100vw;

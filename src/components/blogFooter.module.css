@@ -3,6 +3,8 @@ footer {
     display: flex;
     flex-direction: column;
     border-top: solid lightgray;
+    align-items: center;
+
 
 }
 
@@ -14,23 +16,26 @@ footer {
 }
 
 .photo {
-    height: 100px;
-    width: 100px;
-    min-width: 100px;
+    width: 120px;
+    margin-top: 3em;
+    border-radius: 50%;
+
 }
 
 .text {
-    padding: 10px;
-
+    font-size: 1.25em;
+    margin: 10px;
+    text-align: center;
 }
 
 .iconContainer {
     display: flex;
-    margin-left: 4em;
     justify-content: center;
-
+    margin-bottom: 2em;
 }
 
 .icon {
-    height:20px;
+    width:64px;
+    margin:20px;
+    margin-top: 20px;
 }

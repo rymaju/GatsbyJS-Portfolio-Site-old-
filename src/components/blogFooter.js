@@ -10,7 +10,28 @@ const BlogFooter = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(relativePath: { eq: "square-boi.png" }) {
+            profilePicture: file(relativePath: { eq: "square-boi.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            githubIcon: file(relativePath: { eq: "github.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            twitterIcon: file(relativePath: { eq: "twitter.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            linkedinIcon: file(relativePath: { eq: "linkedin.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 300) {
                         ...GatsbyImageSharpFluid
@@ -23,14 +44,15 @@ const BlogFooter = () => {
 
     return(
         <footer>
-            <div className={styles.photoAndTextContainer}>
-                <Img fluid={data.placeholderImage.childImageSharp.fluid} className={styles.photo}/>
-                <h5 className={styles.text}>
+                <Img fluid={data.profilePicture.childImageSharp.fluid} className={styles.photo}/>
+                <p className={styles.text}>
                     Made by Ryan Jung, a computer science student at Northeastern University.
-                </h5>
-            </div>
+                </p>
             <div className={styles.iconContainer}>
-                <h5>G, T, R</h5>
+                <a href='https://github.com/rymaju'><Img fluid={data.githubIcon.childImageSharp.fluid} className={styles.icon}/></a>
+                <a href='https://www.linkedin.com/in/ryan-jung-02101a160/'><Img fluid={data.linkedinIcon.childImageSharp.fluid} className={styles.icon}/></a>
+                <a href='https://twitter.com/ryanmatthewjung'><Img fluid={data.twitterIcon.childImageSharp.fluid} className={styles.icon}/></a>
+
             </div>
         </footer>
     );
