@@ -1,0 +1,47 @@
+.skillsContainer {
+    max-width: 900px;
+    min-height: 100vh;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.skillRow {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: solid lightgray 1px;
+    border-right: solid lightgray 1px;
+}
+
+.skillColumn {
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skillColumn ul {
+    text-align: left;
+}
+
+.skillTitle {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 959px) {
+    .skillsContainer {
+        width: 80%;
+    }
+    .skillRow {
+        border-left: solid transparent 1px;
+        border-right: solid transparent 1px;
+    }
+    .skillsContainer {
+        text-align: center;
+    }
+}

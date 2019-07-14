@@ -1,0 +1,33 @@
+.iconContainer {
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.iconText {
+    font-weight: 200;
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 400px) {
+    .icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.iconText {
+    font-weight: 200;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+}

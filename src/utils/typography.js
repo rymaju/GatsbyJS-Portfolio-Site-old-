@@ -4,15 +4,15 @@ import theme from 'typography-theme-bootstrap';
 theme.headerWeight = `700`;
 theme.headerGray = `0`;
 theme.overrideThemeStyles = () => ({
-    'a': {
-        color: `#cc0000`,
+    a: {
+        color: `#4D97BB;
+`,
 
         textDecoration: `none`,
     },
-    'a:hover': {
-        color: `#ff5512`,
+    "a:hover": {
+        color: `#4D97BB`,
     },
-    
 });
 
 
