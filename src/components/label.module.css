@@ -1,0 +1,13 @@
+.label {
+    width: fit-content;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.labelText {
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+}

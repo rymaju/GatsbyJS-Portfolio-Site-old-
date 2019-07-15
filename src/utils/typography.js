@@ -1,5 +1,5 @@
-import Typography from 'typography';
-import theme from 'typography-theme-bootstrap';
+import Typography from "typography";
+import theme from "typography-theme-bootstrap";
 
 theme.headerWeight = `700`;
 theme.headerGray = `0`;
@@ -12,11 +12,11 @@ theme.overrideThemeStyles = () => ({
     },
     "a:hover": {
         color: `#4D97BB`,
+        borderBottom: `solid #4D97BB 1px`,
     },
 });
 
+const typography = new Typography(theme);
 
-const typography = new Typography(theme)
-
-export const {scale, rhythm, options} = typography;
+export const { scale, rhythm, options } = typography;
 export default typography;

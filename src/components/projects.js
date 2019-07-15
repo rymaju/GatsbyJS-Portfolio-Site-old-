@@ -4,121 +4,13 @@ import { useStaticQuery, graphql } from "gatsby";
 import styles from "./projects.module.css";
 import Img from "gatsby-image";
 import Icon from "./icon";
+import Label from "./label";
 
-const Label = ({ color, children }) => {
-    return (
-        <div
-            style={{
-                backgroundColor: color,
-                width: `fit-content`,
-                padding: `5px`,
-
-                marginRight: `10px`,
-                marginLeft: `0px`,
-                marginBottom: `10px`
-            }}
-        >
-            <p
-                style={{
-                    textAlign: `center`,
-                    margin: `auto`,
-                    whiteSpace: `nowrap`,
-                }}
-            >
-                {children}
-            </p>
-        </div>
-    );
-};
-
-const Skills = () => {
+const Projects = () => {
     //query icons for each skill
     const data = useStaticQuery(graphql`
         query {
-            java: file(relativePath: { eq: "java.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            javascript: file(relativePath: { eq: "javascript.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            ruby: file(relativePath: { eq: "ruby.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            php: file(relativePath: { eq: "php.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            mysql: file(relativePath: { eq: "mysql.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            python: file(relativePath: { eq: "python.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            reactjs: file(relativePath: { eq: "reactjs.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            gatsbyjs: file(relativePath: { eq: "gatsby-icon.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            rails: file(relativePath: { eq: "rails.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            laravel: file(relativePath: { eq: "laravel.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            express: file(relativePath: { eq: "express.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            test: file(relativePath: { eq: "example_screenshot.JPG" }) {
+            explorable_trie: file(relativePath: { eq: "explorable_trie.JPG" }) {
                 childImageSharp {
                     fluid(maxWidth: 600) {
                         ...GatsbyImageSharpFluid
@@ -133,53 +25,43 @@ const Skills = () => {
             <h1>Projects</h1>
             <div className={styles.skillColumn}>
                 <div className={styles.skillColumn}>
-                    <h2 className={styles.skillTitle}>Example Project</h2>
+                    <h2 className={styles.skillTitle}>Explorable Trie</h2>
+
                     <div className={styles.skillRow}>
                         <Img
-                            fluid={data.test.childImageSharp.fluid}
-                            style={{
-                                height: `200px`,
-                                minWidth: `350px`,
-                                width: `fit-content`,
-                                margin: `30px`,
-                                marginTop: `0`,
-                                boxShadow: `4px 6px 5px #555555`,
-                                // border: `solid #cccccc 1px`,
-                            }}
+                            fluid={data.explorable_trie.childImageSharp.fluid}
+                            className={styles.projectImage}
                         />
+
                         <div
-                            className={styles.skillsColumn}
-                            style={{
-                                maxWidth: `400px`,
-                                textAlign: `left`,
-                                overflow: `hidden`,
-                            }}
+                            className={[
+                                styles.skillsColumn,
+                                styles.projectDescription,
+                            ].join(" ")}
                         >
-                            <p>
-                                This is a description of the project that is
-                                here. It uses some cool technololgies to do
-                                stuff. Increased amazingness factor by up to
-                                500% and happy people by 42 dollars.
+                            <p className={styles.projectText}>
+                                Explorable Trie is a educational web page that
+                                allows users to learn about and play with the
+                                Trie data structure. This was a final project
+                                for my high school data structures course. It
+                                uses basic Javascript and D3.js to display the
+                                interactive Trie model.
                             </p>
-                            <div
-                                style={{
-                                    color: `#ffffff`,
-                                    fontWeight: `300`,
-                                    display: `flex`,
-                                    justifyContent: `flex-start`,
-                                    flexWrap: `wrap`,
-                                    marginBottom: `30px`,
-                                }}
-                            >
-                                <Label color={`seagreen`}>NodeJS</Label>
+                            <div className={styles.linksContainer}>
+                                <a href="https://glitch.com/edit/#!/explorable-trie">
+                                    See Code
+                                </a>
+                                &nbsp;|&nbsp;
+                                <a href="http://explorable-trie.glitch.me/">
+                                    View Live
+                                </a>
+                            </div>
+                            <div className={styles.labelContainer}>
+                                <Label color={`orangered`}>D3.js</Label>
+                                {/* <Label color={`seagreen`}>NodeJS</Label>
                                 <Label color={`indigo`}>GatsbyJS</Label>
                                 <Label color={`dodgerblue`}>ReactJS</Label>
-                                <Label color={`tomato`}>Ruby on Rails</Label>
-                            </div>
-                            <div>
-                                <a>See Code</a>
-                                &nbsp;|&nbsp;
-                                <a>View Live</a>
+                                <Label color={`tomato`}>Ruby on Rails</Label> */}
                             </div>
                         </div>
                     </div>
@@ -189,4 +71,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default Projects;
