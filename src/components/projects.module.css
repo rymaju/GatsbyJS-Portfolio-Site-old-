@@ -1,12 +1,11 @@
-.skillsContainer {
+.projectsContainer {
     max-width: 900px;
-    min-height: 100vh;
     margin: auto;
     text-align: left;
     margin-top: 50px;
 }
 
-.skillRow {
+.projectRow {
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -14,20 +13,21 @@
     flex-wrap: wrap;
     border-left: solid lightgray 1px;
     border-right: solid lightgray 1px;
+    margin-bottom: 80px;
 }
 
-.skillColumn {
+.projectColumn {
     display: flex;
     margin-top: 1em;
     flex-direction: column;
     justify-content: center;
 }
 
-.skillColumn ul {
+.projectColumn ul {
     text-align: left;
 }
 
-.skillTitle {
+.projectTitle {
     margin: 0px;
     margin-bottom: 20px;
     font-weight: 500;
@@ -63,14 +63,23 @@
 }
 
 @media (max-width: 959px) {
-    .skillsContainer {
+    .projectsContainer {
         width: 80%;
     }
-    .skillRow {
+    .projectRow {
         border-left: solid transparent 1px;
         border-right: solid transparent 1px;
     }
-    .skillsContainer {
+    .projectsContainer {
         text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .projectImage {
+        min-width: 100%;
+
+        margin: 30px;
+        margin-top: 0;
+        box-shadow: 2px 4px 10px 4px #555555;
     }
 }

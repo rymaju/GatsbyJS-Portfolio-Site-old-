@@ -138,4 +138,28 @@ h1 {
 }
 
 @media (max-width: 960px) {
+    svg {
+        max-width: 70%;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    svg {
+        max-width: 80%;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .subtitleLinks {
+        font-size: 16px;
+    }
+    .subtitleLinks a {
+        margin: 10px;
+    }
 }

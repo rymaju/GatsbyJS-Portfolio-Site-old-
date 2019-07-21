@@ -9,7 +9,10 @@ import SEO from "../../components/seo";
 const BlogIndex = ({ data }) => {
     return (
         <BlogLayout>
-            <SEO title="Blog" />
+            <SEO
+                title="Blog"
+                description="A blog about my computer science projects and education."
+            />
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div key={node.id}>

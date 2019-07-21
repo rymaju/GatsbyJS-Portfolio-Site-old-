@@ -3,16 +3,22 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import styles from "./projects.module.css";
 import Img from "gatsby-image";
-import Icon from "./icon";
 import Label from "./label";
 
 const Projects = () => {
-    //query icons for each skill
+    //query images for each project
     const data = useStaticQuery(graphql`
         query {
             explorable_trie: file(relativePath: { eq: "explorable_trie.JPG" }) {
                 childImageSharp {
-                    fluid(maxWidth: 600) {
+                    fluid(maxWidth: 1080) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            portfolio: file(relativePath: { eq: "portfolio.JPG" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1080) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -21,13 +27,57 @@ const Projects = () => {
     `);
     console.log(data);
     return (
-        <div className={styles.skillsContainer} id="projects">
+        <div className={styles.projectsContainer} id="projects">
             <h1>Projects</h1>
-            <div className={styles.skillColumn}>
-                <div className={styles.skillColumn}>
-                    <h2 className={styles.skillTitle}>Explorable Trie</h2>
+            <div className={styles.projectColumn}>
+                <div className={styles.projectColumn}>
+                    <h2 className={styles.projectTitle}>
+                        Gatsby Portfolio & Blog
+                    </h2>
 
-                    <div className={styles.skillRow}>
+                    <div className={styles.projectRow}>
+                        <Img
+                            fluid={data.portfolio.childImageSharp.fluid}
+                            className={styles.projectImage}
+                        />
+
+                        <div
+                            className={[
+                                styles.projectsColumn,
+                                styles.projectDescription,
+                            ].join(" ")}
+                        >
+                            <p className={styles.projectText}>
+                                My personal site was built using GatsbyJS, which
+                                required knowledge of ReactJS as well as basic
+                                HTML/CSS and Javascript. Additional libraries
+                                such as anime.js were used in order to create
+                                SVG Path animations such as on the at the top of
+                                this page. SEO components were also used to
+                                increase searchability of the site, and uses
+                                Gatsby lazy loading to achieve nearly perfect
+                                scores on Lighthouse web audit.
+                            </p>
+                            <div className={styles.linksContainer}>
+                                <a href="https://github.com/rymaju/GatsbyJS-Portfolio-Site">
+                                    See Code
+                                </a>
+                                &nbsp;|&nbsp;
+                                <a href="http://explorable-trie.glitch.me/">
+                                    View Live (You're already here)
+                                </a>
+                            </div>
+                            <div className={styles.labelContainer}>
+                                <Label color={`seagreen`}>NodeJS</Label>
+                                <Label color={`indigo`}>GatsbyJS</Label>
+                                <Label color={`dodgerblue`}>ReactJS</Label>
+                                <Label color={`tomato`}>anime.js</Label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 className={styles.projectTitle}>Explorable Trie</h2>
+                    <div className={styles.projectRow}>
                         <Img
                             fluid={data.explorable_trie.childImageSharp.fluid}
                             className={styles.projectImage}
@@ -35,7 +85,7 @@ const Projects = () => {
 
                         <div
                             className={[
-                                styles.skillsColumn,
+                                styles.projectsColumn,
                                 styles.projectDescription,
                             ].join(" ")}
                         >
@@ -48,7 +98,7 @@ const Projects = () => {
                                 interactive Trie model.
                             </p>
                             <div className={styles.linksContainer}>
-                                <a href="https://glitch.com/edit/#!/explorable-trie">
+                                <a href="https://github.com/rymaju/explorable-trie">
                                     See Code
                                 </a>
                                 &nbsp;|&nbsp;

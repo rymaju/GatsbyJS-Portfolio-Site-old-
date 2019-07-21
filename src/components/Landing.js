@@ -81,7 +81,9 @@ class Landing extends React.Component {
                         <span className={styles.seperator}>|</span>
                         <Link to="/blog">Blog</Link>
                         <span className={styles.seperator}>|</span>
-                        <Link to="/#contact">Contact</Link>
+                        <a href="#contact">Contact</a>
+                        <span className={styles.seperator}>|</span>
+                        <a href="/resume.pdf">Resume</a>
                     </h2>
                 </div>
                 <div>

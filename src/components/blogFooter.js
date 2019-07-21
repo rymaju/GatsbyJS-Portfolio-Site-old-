@@ -37,11 +37,18 @@ const BlogFooter = () => {
                     }
                 }
             }
+            mail: file(relativePath: { eq: "gmail.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
     `);
 
     return (
-        <footer>
+        <div className={styles.footerContainer}>
             <Img
                 fluid={data.profilePicture.childImageSharp.fluid}
                 className={styles.photo}
@@ -51,6 +58,12 @@ const BlogFooter = () => {
                 University.
             </p>
             <div className={styles.iconContainer}>
+                <a href="mailto:ryan.matthew.jung@gmail.com">
+                    <Img
+                        fluid={data.mail.childImageSharp.fluid}
+                        className={styles.icon}
+                    />
+                </a>
                 <a href="https://github.com/rymaju">
                     <Img
                         fluid={data.githubIcon.childImageSharp.fluid}
@@ -70,7 +83,7 @@ const BlogFooter = () => {
                     />
                 </a>
             </div>
-        </footer>
+        </div>
     );
 };
 
