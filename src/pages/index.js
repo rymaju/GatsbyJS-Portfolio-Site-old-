@@ -7,7 +7,7 @@ import Skills from "../components/skills";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 import About from "../components/about";
-require("smooth-scroll")('a[href*="#"]');
+//require("smooth-scroll")('a[href*="#"]'); this breaks netlify for some reason
 
 class IndexPage extends React.Component {
     render() {
