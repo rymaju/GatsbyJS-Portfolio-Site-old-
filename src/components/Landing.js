@@ -19,7 +19,7 @@ class Landing extends React.Component {
             duration: 5000,
         });
     };
-
+    
     render() {
         return (
             <div className={styles.landingContainer}>
