@@ -63,7 +63,7 @@ const Projects = () => {
                                     See Code
                                 </a>
                                 &nbsp;|&nbsp;
-                                <a href="ryan-jung.netlify.com">
+                                <a href="https://ryan-jung.netlify.com">
                                     View Live (You're already here)
                                 </a>
                             </div>
