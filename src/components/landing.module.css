@@ -1,7 +1,7 @@
 .landingContainer {
-    height: 100vh;
+    height: 99vh;
     width: 100%;
-    background-color: #111115;
+    background-color: #17171a;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
