@@ -25,15 +25,7 @@ const Skills = () => {
                 }
             }
 
-            ruby: file(relativePath: { eq: "ruby.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            php: file(relativePath: { eq: "php.png" }) {
+            mongodb: file(relativePath: { eq: "mongodb.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 100) {
                         ...GatsbyImageSharpFluid
@@ -42,14 +34,6 @@ const Skills = () => {
             }
 
             mysql: file(relativePath: { eq: "mysql.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-
-            python: file(relativePath: { eq: "python.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 100) {
                         ...GatsbyImageSharpFluid
@@ -71,20 +55,14 @@ const Skills = () => {
                     }
                 }
             }
-            rails: file(relativePath: { eq: "rails.png" }) {
+            vuejs: file(relativePath: { eq: "vuejs.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
             }
-            laravel: file(relativePath: { eq: "laravel.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
+
             express: file(relativePath: { eq: "express.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 100) {
@@ -108,15 +86,11 @@ const Skills = () => {
                         <Icon fluid={data.javascript.childImageSharp.fluid}>
                             Javascript
                         </Icon>
-                        <Icon fluid={data.ruby.childImageSharp.fluid}>
-                            Ruby
+                        <Icon fluid={data.mongodb.childImageSharp.fluid}>
+                            MongoDB
                         </Icon>
-                        <Icon fluid={data.php.childImageSharp.fluid}>PHP</Icon>
                         <Icon fluid={data.mysql.childImageSharp.fluid}>
                             MySQL
-                        </Icon>
-                        <Icon fluid={data.python.childImageSharp.fluid}>
-                            Python
                         </Icon>
                     </div>
                 </div>
@@ -130,14 +104,11 @@ const Skills = () => {
                         <Icon fluid={data.gatsbyjs.childImageSharp.fluid}>
                             GatsbyJS
                         </Icon>
+                        <Icon fluid={data.vuejs.childImageSharp.fluid}>
+                            Vue.js
+                        </Icon>
                         <Icon fluid={data.express.childImageSharp.fluid}>
                             ExpressJS
-                        </Icon>
-                        <Icon fluid={data.rails.childImageSharp.fluid}>
-                            Rails
-                        </Icon>
-                        <Icon fluid={data.laravel.childImageSharp.fluid}>
-                            Laravel
                         </Icon>
                     </div>
                 </div>

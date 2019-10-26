@@ -63,7 +63,7 @@ const Projects = () => {
                                     See Code
                                 </a>
                                 &nbsp;|&nbsp;
-                                <a href="http://explorable-trie.glitch.me/">
+                                <a href="ryan-jung.netlify.com">
                                     View Live (You're already here)
                                 </a>
                             </div>
