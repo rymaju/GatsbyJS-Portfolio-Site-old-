@@ -41,6 +41,7 @@
     margin: 20px;
 }
 .subtitleLinks a:hover {
+    cursor: pointer;
 }
 
 .welcome {
