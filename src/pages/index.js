@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
         return (
             <div style={{ overflowX: `hidden` }}>
                 <SEO
-                    title='Portfolio'
+                    title='Ryan Jung Software Developer Portfolio'
                     description="Ryan Jung's software engineering and web development portfolio, including skills and technologies as well as personal projects."
                 />
                 <Landing />

@@ -10,7 +10,7 @@ const BlogIndex = ({ data }) => {
     return (
         <BlogLayout>
             <SEO
-                title="Blog"
+                title="Ryan Jung's Blog"
                 description="A blog about my computer science projects and education."
             />
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>

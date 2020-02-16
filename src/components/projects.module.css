@@ -45,7 +45,7 @@
     width: fit-content;
     margin: 30px;
     margin-top: 0;
-    box-shadow: 2px 4px 8px 4px #555555;
+    box-shadow: -2px 4px 15px 0px #555555;
 }
 .projectDescription {
     max-width: 400px;
