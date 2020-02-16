@@ -3,7 +3,6 @@ import React from "react";
 import SEO from "../components/seo";
 
 import Landing from "../components/Landing";
-import Skills from "../components/skills";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 import About from "../components/about";
