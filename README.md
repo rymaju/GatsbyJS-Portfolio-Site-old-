@@ -6,3 +6,8 @@
 -Make best use of components and best practices with GatsbyJS
 -Create a blog area under the portfolio site that pulls data from a content folder with markdown files and images
 
+## Run
+
+`gatsby run serve`
+
+-   Runs gatsby locally, for developent

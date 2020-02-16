@@ -1,8 +1,16 @@
+.sectionTitle {
+    font-size: 48px;
+    color: #38149c;
+}
+
 .skillsContainer {
     max-width: 900px;
     margin: auto;
     text-align: left;
     margin-top: 50px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .skillRow {
@@ -68,8 +76,5 @@
     .skillRow {
         border-left: solid transparent 1px;
         border-right: solid transparent 1px;
-    }
-    h1 {
-        text-align: center;
     }
 }

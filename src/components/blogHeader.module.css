@@ -4,8 +4,6 @@ header {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    border-bottom: solid lightgray;
-
 }
 
 .name {
@@ -13,7 +11,7 @@ header {
     flex-direction: column;
     margin-left: 4em;
     font-weight: bolder;
-
+    color: #38149c;
 }
 .name a {
     color: #454545;
@@ -22,9 +20,7 @@ header {
     border: solid transparent 0px;
 }
 
-
 .nav {
     margin-right: 4em;
     margin-left: 4em;
-
 }

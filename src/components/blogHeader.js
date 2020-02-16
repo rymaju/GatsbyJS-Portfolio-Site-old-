@@ -6,16 +6,16 @@ const BlogHeader = () => {
     return (
         <header>
             <div className={styles.name}>
-                <Link to="/">
+                <Link to='/'>
                     <h1>Ryan Jung</h1>
                 </Link>
             </div>
 
             <div className={styles.nav}>
                 <h2>
-                    <Link to="/#projects">Projects</Link> |{" "}
-                    <Link to="/blog/">Blog</Link> |{" "}
-                    <Link to="/blog/about/">About Me</Link>
+                    <Link to='/'>home</Link> |{" "}
+                    <Link to='/#projects'>projects</Link> |{" "}
+                    <a href='/resume.pdf'>resume</a>
                 </h2>
             </div>
         </header>

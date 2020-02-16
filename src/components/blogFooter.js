@@ -58,25 +58,25 @@ const BlogFooter = () => {
                 University.
             </p>
             <div className={styles.iconContainer}>
-                <a href="mailto:ryan.matthew.jung@gmail.com">
+                <a href='mailto:ryan.matthew.jung@gmail.com'>
                     <Img
                         fluid={data.mail.childImageSharp.fluid}
                         className={styles.icon}
                     />
                 </a>
-                <a href="https://github.com/rymaju">
+                <a href='https://github.com/rymaju'>
                     <Img
                         fluid={data.githubIcon.childImageSharp.fluid}
                         className={styles.icon}
                     />
                 </a>
-                <a href="https://www.linkedin.com/in/ryan-jung-02101a160/">
+                <a href='https://www.linkedin.com/in/ryan-jung-02101a160/'>
                     <Img
                         fluid={data.linkedinIcon.childImageSharp.fluid}
                         className={styles.icon}
                     />
                 </a>
-                <a href="https://twitter.com/ryanmatthewjung">
+                <a href='https://twitter.com/ryanmatthewjung'>
                     <Img
                         fluid={data.twitterIcon.childImageSharp.fluid}
                         className={styles.icon}

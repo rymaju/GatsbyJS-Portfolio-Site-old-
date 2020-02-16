@@ -10,16 +10,16 @@ import About from "../components/about";
 //require("smooth-scroll")('a[href*="#"]'); this breaks netlify for some reason
 
 class IndexPage extends React.Component {
-    render() {
+    render () {
         return (
             <div style={{ overflowX: `hidden` }}>
                 <SEO
-                    title="Portfolio"
+                    title='Portfolio'
                     description="Ryan Jung's software engineering and web development portfolio, including skills and technologies as well as personal projects."
                 />
                 <Landing />
                 <About />
-                <Skills />
+
                 <Projects />
                 <Contact />
             </div>

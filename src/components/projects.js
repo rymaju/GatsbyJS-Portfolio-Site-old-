@@ -27,8 +27,8 @@ const Projects = () => {
     `);
     console.log(data);
     return (
-        <div className={styles.projectsContainer} id="projects">
-            <h1>Projects</h1>
+        <div className={styles.projectsContainer} id='projects'>
+            <h2 className={styles.sectionTitle}>projects</h2>
             <div className={styles.projectColumn}>
                 <div className={styles.projectColumn}>
                     <h2 className={styles.projectTitle}>
@@ -59,11 +59,11 @@ const Projects = () => {
                                 scores on Lighthouse web audit.
                             </p>
                             <div className={styles.linksContainer}>
-                                <a href="https://github.com/rymaju/GatsbyJS-Portfolio-Site">
+                                <a href='https://github.com/rymaju/GatsbyJS-Portfolio-Site'>
                                     See Code
                                 </a>
                                 &nbsp;|&nbsp;
-                                <a href="https://ryan-jung.netlify.com">
+                                <a href='https://ryan-jung.netlify.com'>
                                     View Live (You're already here)
                                 </a>
                             </div>
@@ -71,7 +71,6 @@ const Projects = () => {
                                 <Label color={`seagreen`}>NodeJS</Label>
                                 <Label color={`indigo`}>GatsbyJS</Label>
                                 <Label color={`dodgerblue`}>ReactJS</Label>
-                                <Label color={`tomato`}>anime.js</Label>
                             </div>
                         </div>
                     </div>
@@ -98,15 +97,18 @@ const Projects = () => {
                                 interactive Trie model.
                             </p>
                             <div className={styles.linksContainer}>
-                                <a href="https://github.com/rymaju/explorable-trie">
+                                <a href='https://github.com/rymaju/explorable-trie'>
                                     See Code
                                 </a>
                                 &nbsp;|&nbsp;
-                                <a href="http://explorable-trie.glitch.me/">
+                                <a href='http://explorable-trie.glitch.me/'>
                                     View Live
                                 </a>
                             </div>
                             <div className={styles.labelContainer}>
+                                <Label color={`rgb(200, 150, 20)`}>
+                                    Javascript
+                                </Label>
                                 <Label color={`orangered`}>D3.js</Label>
                                 {/* <Label color={`seagreen`}>NodeJS</Label>
                                 <Label color={`indigo`}>GatsbyJS</Label>
