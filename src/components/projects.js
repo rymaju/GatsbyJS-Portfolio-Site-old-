@@ -23,6 +23,13 @@ const Projects = () => {
                     }
                 }
             }
+            fundies: file(relativePath: { eq: "fundiescollab.JPG" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1080) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
     `);
     console.log(data);
@@ -31,6 +38,51 @@ const Projects = () => {
             <h2 className={styles.sectionTitle}>projects</h2>
             <div className={styles.projectColumn}>
                 <div className={styles.projectColumn}>
+                    <h2 className={styles.projectTitle}>FundiesCollab</h2>
+
+                    <div className={styles.projectRow}>
+                        <Img
+                            fluid={data.fundies.childImageSharp.fluid}
+                            className={styles.projectImage}
+                        />
+
+                        <div
+                            className={[
+                                styles.projectsColumn,
+                                styles.projectDescription,
+                            ].join(" ")}
+                        >
+                            <p className={styles.projectText}>
+                                FundiesCollab is a collaborative real-time code
+                                editor for Java that allows users to instantly
+                                compile and test their code using the Tester and
+                                Image libraries from the introductory Computer
+                                Science courses at Northeastern University.
+                                FundiesCollab uses Vue for the frontend, and a
+                                combination of socketio, Docker, and Redis on an
+                                Express server to create secure, fast, and
+                                persistent "rooms" for users to work in.
+                            </p>
+                            <div className={styles.linksContainer}>
+                                <a href='https://github.com/rymaju/fundiescollab'>
+                                    See Code
+                                </a>
+                                &nbsp;|&nbsp;
+                                <a href='https://fundiescollab.com'>
+                                    View Live
+                                </a>
+                            </div>
+                            <div className={styles.labelContainer}>
+                                <Label color={`seagreen`}>NodeJS</Label>
+                                <Label color={`goldenrod`}>Express</Label>
+                                <Label color={`mediumseagreen`}>VueJS</Label>
+                                <Label color={`orangered`}>socket.io</Label>
+                                <Label color={`dodgerblue`}>Docker</Label>
+                                <Label color={`red`}>Redis</Label>
+                            </div>
+                        </div>
+                    </div>
+
                     <h2 className={styles.projectTitle}>
                         Gatsby Portfolio & Blog
                     </h2>

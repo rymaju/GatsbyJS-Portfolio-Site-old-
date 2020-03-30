@@ -20,7 +20,7 @@ class Landing extends React.Component {
                         <span className={styles.seperator}>|</span>
                         <a onClick={() => scrollTo("#contact")}>contact</a>
                         <span className={styles.seperator}>|</span>
-                        <a href='/resume.pdf'>resume</a>
+                        <a href='/resume_ryan_jung.pdf'>resume</a>
                     </h2>
                 </div>
                 <div className={styles.scrollDownContainer}>
