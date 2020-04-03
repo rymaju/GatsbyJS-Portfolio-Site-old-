@@ -59,9 +59,9 @@ const Projects = () => {
                                 Image libraries from the introductory Computer
                                 Science courses at Northeastern University.
                                 FundiesCollab uses Vue for the frontend, and a
-                                combination of socketio, Docker, and Redis on an
-                                Express server to create secure, fast, and
-                                persistent "rooms" for users to work in.
+                                combination of socket.io, Docker, and Redis on
+                                an Express server to create secure, fast, and
+                                persistent "rooms" where users can code together.
                             </p>
                             <div className={styles.linksContainer}>
                                 <a href='https://github.com/rymaju/fundiescollab'>
