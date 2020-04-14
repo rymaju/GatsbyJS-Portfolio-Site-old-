@@ -17,7 +17,7 @@ export default ({ data }) => {
                 )}
             </h3>
 
-            <Link to="/blog/">
+            <Link to='/blog/'>
                 <p>{"\u2190"} Back to Blog List</p>
             </Link>
             <div dangerouslySetInnerHTML={{ __html: pageData.html }} />

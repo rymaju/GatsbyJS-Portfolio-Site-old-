@@ -11,15 +11,13 @@ const BlogIndex = ({ data }) => {
         <BlogLayout>
             <SEO
                 title="Ryan Jung's Blog"
-                description="A blog about my computer science projects and education."
+                description='A blog about my computer science projects and education.'
             />
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div key={node.id}>
                     <Link to={node.fields.slug}>
-                        <h2>
-                            {node.frontmatter.title} - {node.frontmatter.date}
-                        </h2>
+                        <h2>{node.frontmatter.title}</h2>
                     </Link>
                     <p>{node.excerpt.slice(0, 250)}</p>
                 </div>

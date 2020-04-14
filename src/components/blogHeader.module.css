@@ -1,17 +1,19 @@
 header {
-    margin-bottom: 2em;
+    margin-bottom: 10px;
 
     min-width: 100%;
     display: flex;
     flex-direction: column;
 }
-
 .name {
     display: flex;
     flex-direction: column;
     margin-left: 4em;
     font-weight: bolder;
     color: #38149c;
+}
+.name h1 {
+    margin-bottom: 5px;
 }
 .name a {
     color: #454545;
