@@ -1,26 +1,22 @@
 .main {
-     margin: 0 auto;
-    padding-left: 4em;
-    padding-right: 4em;
-
+    margin: 0 1em 1em 1em;
+    max-width: 100%;
     /* max-width: 960px; */
-
-
 
     /* display: grid;
     grid-row-gap: 2em;
     grid-template-columns: auto;
     grid-template-rows: 100px auto 100px;
 */
-
 }
 .main h2 {
     margin-bottom: 5px;
 }
 
 .container {
-    max-width: 100vw;
-    margin-left: 15.5vw;
-    margin-right: 15.5vw;
-
+    max-width: 1000px;
+}
+.root {
+    display: flex;
+    justify-content: center;
 }

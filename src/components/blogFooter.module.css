@@ -14,7 +14,7 @@
 }
 
 .photo {
-    width: 120px;
+    width: 180px;
     margin-top: 3em;
     border-radius: 50%;
 }
@@ -42,10 +42,6 @@
 }
 
 @media (max-width: 500px) {
-    .footerContainer {
-        width: 320px;
-    }
-
     .icon {
         width: 48px;
         margin: 10px;

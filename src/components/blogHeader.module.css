@@ -8,7 +8,7 @@ header {
 .name {
     display: flex;
     flex-direction: column;
-    margin-left: 4em;
+    margin-left: 1em;
     font-weight: bolder;
     color: #38149c;
 }
@@ -23,6 +23,5 @@ header {
 }
 
 .nav {
-    margin-right: 4em;
-    margin-left: 4em;
+    margin-left:1em;
 }

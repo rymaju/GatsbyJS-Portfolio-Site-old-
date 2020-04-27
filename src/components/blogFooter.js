@@ -9,9 +9,9 @@ const BlogFooter = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            profilePicture: file(relativePath: { eq: "square-boi.png" }) {
+            profilePicture: file(relativePath: { eq: "ryan_square.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 300) {
+                    fluid(maxWidth: 600) {
                         ...GatsbyImageSharpFluid
                     }
                 }
