@@ -76,12 +76,6 @@ const BlogFooter = () => {
                         className={styles.icon}
                     />
                 </a>
-                <a href='https://twitter.com/ryanmatthewjung'>
-                    <Img
-                        fluid={data.twitterIcon.childImageSharp.fluid}
-                        className={styles.icon}
-                    />
-                </a>
             </div>
         </div>
     );

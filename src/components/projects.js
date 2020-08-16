@@ -35,7 +35,7 @@ const Projects = () => {
     console.log(data);
     return (
         <div className={styles.projectsContainer} id='projects'>
-            <h2 className={styles.sectionTitle}>projects</h2>
+            <h2 className={styles.sectionTitle}>Projects.</h2>
             <div className={styles.projectColumn}>
                 <div className={styles.projectColumn}>
                     <h2 className={styles.projectTitle}>FundiesCollab</h2>
@@ -72,14 +72,7 @@ const Projects = () => {
                                     View Live
                                 </a>
                             </div>
-                            <div className={styles.labelContainer}>
-                                <Label color={`seagreen`}>NodeJS</Label>
-                                <Label color={`goldenrod`}>Express</Label>
-                                <Label color={`mediumseagreen`}>VueJS</Label>
-                                <Label color={`orangered`}>socket.io</Label>
-                                <Label color={`dodgerblue`}>Docker</Label>
-                                <Label color={`red`}>Redis</Label>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -119,11 +112,7 @@ const Projects = () => {
                                     View Live (You're already here)
                                 </a>
                             </div>
-                            <div className={styles.labelContainer}>
-                                <Label color={`seagreen`}>NodeJS</Label>
-                                <Label color={`indigo`}>GatsbyJS</Label>
-                                <Label color={`dodgerblue`}>ReactJS</Label>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -157,16 +146,7 @@ const Projects = () => {
                                     View Live
                                 </a>
                             </div>
-                            <div className={styles.labelContainer}>
-                                <Label color={`rgb(200, 150, 20)`}>
-                                    Javascript
-                                </Label>
-                                <Label color={`orangered`}>D3.js</Label>
-                                {/* <Label color={`seagreen`}>NodeJS</Label>
-                                <Label color={`indigo`}>GatsbyJS</Label>
-                                <Label color={`dodgerblue`}>ReactJS</Label>
-                                <Label color={`tomato`}>Ruby on Rails</Label> */}
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 .sectionTitle {
-    font-size: 48px;
-    color: #38149c;
+    font-size: 72px;
+    margin-bottom: 1em;
 }
 
 .projectsContainer {
@@ -33,9 +33,9 @@
 
 .projectTitle {
     margin: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 400;
 }
 

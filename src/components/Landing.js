@@ -8,13 +8,19 @@ class Landing extends React.Component {
         return (
             <div className={styles.landingContainer}>
                 <div className={styles.welcome}>
-                    <h1 className={styles.name}>Ryan Jung</h1>
+                    <h1 className={styles.name}>Hi I'm Ryan.</h1>
                     <p className={styles.subtitle}>
-                        Computer Science major at Northeastern University,
-                        currently pursuing a career in software engineering.
+                        I’m studying Computer Science at Northeastern.
+                    </p>
+                    <p className={styles.subtitleBody}>
+                        I like clean simple things that move and <i>pop</i>.
+                    </p>
+                    <p className={styles.subtitleBody}>
+                        I create easy, performant, accessible interfaces made
+                        with <b>love</b>.{" "}
                     </p>
                     <h2 className={styles.subtitleLinks}>
-                        <a onClick={() => scrollTo("#projects")}>projects</a>
+                        <a href onClick={() => scrollTo("#projects")}>projects</a>
                         <span className={styles.seperator}>|</span>
                         <Link to='/blog'>blog</Link>
                         <span className={styles.seperator}>|</span>
@@ -23,9 +29,7 @@ class Landing extends React.Component {
                         <a href='/resume_ryan_jung.pdf'>resume</a>
                     </h2>
                 </div>
-                <div className={styles.scrollDownContainer}>
-                    <p className={styles.arrow}>{"▼"}</p>
-                </div>
+
             </div>
         );
     }

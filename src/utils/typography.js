@@ -5,14 +5,9 @@ theme.headerWeight = `700`;
 theme.headerGray = `0`;
 theme.overrideThemeStyles = () => ({
     a: {
-        color: `#4D97BB;
-`,
-
+        //color: `#4D97BB;`,
+        color: `#0077aa;`,
         textDecoration: `none`,
-    },
-    "a:hover": {
-        color: `#4D97BB`,
-        borderBottom: `solid #4D97BB 1px`,
     },
 });
 

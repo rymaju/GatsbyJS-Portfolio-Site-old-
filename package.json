@@ -6,7 +6,7 @@
   "author": "Ryan Jung <ryan.matthew.jung@gmail.com>",
   "dependencies": {
     "animejs": "^3.1.0",
-    "gatsby": "^2.19.17",
+    "gatsby": "^2.24.47",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^2.2.10",
@@ -17,7 +17,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.51",
     "gatsby-transformer-sharp": "^2.3.14",
-    "npm": "^6.13.7",
+    "npm": "^6.14.7",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

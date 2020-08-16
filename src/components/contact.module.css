@@ -1,8 +1,35 @@
 .contactContainer {
     min-height: 75vh;
+    max-width: 900px;
+    margin: auto;
     text-align: left;
+    margin-top: 50px;
+}
+.sectionTitle {
+    font-size: 72px;
+    margin-bottom: 0.5em;
+}
+
+.projectsContainer {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+
+.hewwo {
     display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 959px) {
+    .contactContainer {
+        width: 80%;
+    }
+
 
 }
