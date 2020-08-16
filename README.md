@@ -1,6 +1,6 @@
-#My GatsbyJS Portfolio
+# My GatsbyJS Portfolio
 
-##Project Objectives
+## Project Objectives
 -Create a functional single page portfolio site to showcase my work to others
 -Make it look good
 -Make best use of components and best practices with GatsbyJS
