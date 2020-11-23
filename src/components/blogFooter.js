@@ -1,13 +1,13 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-import styles from "./blogFooter.module.css";
+import styles from './blogFooter.module.css'
 
 const BlogFooter = () => {
-    //get the photo data
+  // get the photo data
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
         query {
             profilePicture: file(relativePath: { eq: "ryan_square.jpg" }) {
                 childImageSharp {
@@ -45,40 +45,40 @@ const BlogFooter = () => {
                 }
             }
         }
-    `);
+    `)
 
-    return (
-        <div className={styles.footerContainer}>
-            <Img
-                fluid={data.profilePicture.childImageSharp.fluid}
-                className={styles.photo}
-            />
-            <p className={styles.text}>
-                Made by Ryan Jung, a computer science student at Northeastern
-                University.
-            </p>
-            <div className={styles.iconContainer}>
-                <a href='mailto:ryan.matthew.jung@gmail.com'>
-                    <Img
-                        fluid={data.mail.childImageSharp.fluid}
-                        className={styles.icon}
-                    />
-                </a>
-                <a href='https://github.com/rymaju'>
-                    <Img
-                        fluid={data.githubIcon.childImageSharp.fluid}
-                        className={styles.icon}
-                    />
-                </a>
-                <a href='https://www.linkedin.com/in/ryan-jung-02101a160/'>
-                    <Img
-                        fluid={data.linkedinIcon.childImageSharp.fluid}
-                        className={styles.icon}
-                    />
-                </a>
-            </div>
-        </div>
-    );
-};
+  return (
+    <div className={styles.footerContainer}>
+      <Img
+        fluid={data.profilePicture.childImageSharp.fluid}
+        className={styles.photo}
+      />
+      <p className={styles.text}>
+        Made by Ryan Jung, a computer science student at Northeastern
+        University.
+      </p>
+      <div className={styles.iconContainer}>
+        <a href='mailto:ryan.matthew.jung@gmail.com'>
+          <Img
+            fluid={data.mail.childImageSharp.fluid}
+            className={styles.icon}
+          />
+        </a>
+        <a href='https://github.com/rymaju'>
+          <Img
+            fluid={data.githubIcon.childImageSharp.fluid}
+            className={styles.icon}
+          />
+        </a>
+        <a href='https://www.linkedin.com/in/ryan-jung-02101a160/'>
+          <Img
+            fluid={data.linkedinIcon.childImageSharp.fluid}
+            className={styles.icon}
+          />
+        </a>
+      </div>
+    </div>
+  )
+}
 
-export default BlogFooter;
+export default BlogFooter

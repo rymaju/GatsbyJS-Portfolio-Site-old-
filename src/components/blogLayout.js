@@ -1,21 +1,28 @@
-import React from "react";
-//import { Link } from 'gatsby';
+import React from 'react'
+// import { Link } from 'gatsby';
 
-import BlogHeader from "./blogHeader";
-import BlogFooter from "./blogFooter";
+import SideMenu from '../components/SideMenu'
 
-import styles from "./blogLayout.module.css";
+import styles from './blogLayout.module.css'
+
+import styled from 'styled-components'
+import { Container, Box, IconButton } from '@material-ui/core'
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
+import { graphql, Link } from 'gatsby'
+
+const BlogContainer = styled(Container)`
+    padding-top: 100px;
+`
 
 const Layout = ({ children }) => {
-    return (
-        <div className={styles.root}>
-            <div className={styles.container}>
-                <BlogHeader />
-                <div className={styles.main}>{children}</div>
-                <BlogFooter />
-            </div>
-        </div>
-    );
-};
+  return (
+    <>
+      <SideMenu />
+      <BlogContainer maxWidth='md'>
+        <>{children}</>
+      </BlogContainer>
+    </>
+  )
+}
 
-export default Layout;
+export default Layout

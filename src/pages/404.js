@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react'
 
-import BlogLayout from "../components/blogLayout";
-import SEO from "../components/seo";
+import BlogLayout from '../components/blogLayout'
+import SEO from '../components/seo'
 
 const NotFoundPage = () => (
-    <BlogLayout>
-        <SEO title="404: Not found" />
-        <h1>Error 404</h1>
-        <h2>Oops, the file you requested does not exist. ;-;</h2>
+  <BlogLayout>
+    <SEO title='404: Not found' />
+    <h1>Error 404</h1>
+    <h2>Oops, the file you requested does not exist. ;-;</h2>
 
-        <br />
+    <br />
 
-        <p>
-            Check out the navigation bar above to look at my portfolio,
-            projects, or blog!
-        </p>
+    <p>
+      Check out the navigation bar above to look at my portfolio,
+      projects, or blog!
+    </p>
 
-        <br />
-        <br />
-    </BlogLayout>
-);
+    <br />
+    <br />
+  </BlogLayout>
+)
 
-export default NotFoundPage;
+export default NotFoundPage

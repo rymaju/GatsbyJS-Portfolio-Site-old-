@@ -44,7 +44,7 @@
     min-width: 350px;
     width: fit-content;
     margin: 30px;
-    margin-top: 0;
+    margin-top: 15px;
     box-shadow: -2px 4px 15px 0px #555555;
 }
 .projectDescription {

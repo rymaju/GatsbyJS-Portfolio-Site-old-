@@ -1,3 +1,6 @@
+import React from 'react'
+import TopLayout from './src/components/TopLayout'
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -6,4 +9,8 @@
 
 // You can delete this file if you're not using it
 
-exports.onInitialClientRender = () => {};
+export const wrapRootElement = ({ element }) => {
+  return <TopLayout>{element}</TopLayout>
+}
+
+// exports.onInitialClientRender = () => {};
