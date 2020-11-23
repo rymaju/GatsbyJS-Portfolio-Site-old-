@@ -13,14 +13,6 @@ const ProjectsContainer = styled.div`
     text-align: left;
 
 `
-const ImageUnderlay = styled.div`
-    position: relative;
-    background-color: red;
-    height: 200px;
-    min-width: 350px;
-    width: fit-content;
-`
-
 const Projects = () => {
   // query images for each project
   const data = useStaticQuery(graphql`

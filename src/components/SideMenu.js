@@ -3,9 +3,6 @@ import React, { useState } from 'react'
 import {
   Typography,
   Box,
-  Button,
-  Grid,
-  Container,
   IconButton,
   Slide,
   Fade
@@ -110,6 +107,8 @@ const TopBar = styled.div`
     height: 60px;
     background-color: #333;
     z-index: 50;
+    top: 0;
+    left: 0;
 `
 
 const Logo = props => {

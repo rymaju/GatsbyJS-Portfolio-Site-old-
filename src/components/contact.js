@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './contact.module.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'

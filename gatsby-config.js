@@ -49,7 +49,15 @@ module.exports = {
       }
     },
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-transition-link'
+    'gatsby-plugin-transition-link',
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        devMode: false
+      }
+    },
+    'gatsby-plugin-webpack-size',
+    `gatsby-plugin-preact`
 
   ]
 }

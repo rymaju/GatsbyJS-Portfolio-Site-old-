@@ -2,7 +2,7 @@ import React from 'react'
 import BlogLayout from '../components/blogLayout'
 import { graphql, Link } from 'gatsby'
 import SEO from '../components/seo'
-import { Container, Typography, IconButton, Box } from '@material-ui/core'
+import { Typography, IconButton, Box } from '@material-ui/core'
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 import styled from 'styled-components'

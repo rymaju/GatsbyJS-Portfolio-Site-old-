@@ -30,15 +30,15 @@ const BlogIndex = ({ data }) => {
       </AniLink>
       <Typography variant='subtitle1'>{data.allMarkdownRemark.totalCount} Posts</Typography>
       {data.allMarkdownRemark.edges.map(({ node }, i) => (
-        <Fade in timeout={500+i*500}>
-        <BlogTeaser key={node.id}>
-          <Link to={node.fields.slug}>
-            <MUILink>
-              <Typography variant='h5'>{node.frontmatter.title}</Typography>
-            </MUILink>
-          </Link>
-          <Typography variant='body2'>{node.excerpt.slice(0, 250)}</Typography>
-        </BlogTeaser>
+        <Fade in timeout={500 + i * 500}>
+          <BlogTeaser key={node.id}>
+            <Link to={node.fields.slug}>
+              <MUILink>
+                <Typography variant='h5'>{node.frontmatter.title}</Typography>
+              </MUILink>
+            </Link>
+            <Typography variant='body2'>{node.excerpt.slice(0, 250)}</Typography>
+          </BlogTeaser>
         </Fade>
       ))}
     </BlogLayout>
