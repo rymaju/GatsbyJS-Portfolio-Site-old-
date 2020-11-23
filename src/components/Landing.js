@@ -29,7 +29,7 @@ class Landing extends React.Component {
               <Fade in timeout={1000}>
                 <Typography variant='h1'>
                   <Box fontWeight='700'>
-                    Hi I'm Ryan.
+                    Hi, I'm Ryan.
                   </Box>
                 </Typography>
               </Fade>
