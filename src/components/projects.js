@@ -38,6 +38,13 @@ const Projects = () => {
                     }
                 }
             }
+            c4c: file(relativePath: { eq: "c4c.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1080) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
     `)
 
@@ -57,6 +64,52 @@ const Projects = () => {
         <div className={styles.projectColumn}>
           <div className={styles.projectColumn}>
 
+          <Fade>
+              <Typography variant='h6'>design+development</Typography>
+              <Typography variant='h3'>
+                <Box fontWeight={700}>
+                  c4cneu.com
+                </Box>
+
+              </Typography>
+              <Typography variant='h5'>A website for Code4Community.</Typography>
+
+              <div className={styles.projectRow}>
+
+                <Img
+                  fluid={data.c4c.childImageSharp.fluid}
+                  className={styles.projectImage}
+                />
+
+                <div
+                  className={[
+                    styles.projectsColumn,
+                    styles.projectDescription
+                  ].join(' ')}
+                >
+                  <Box marginTop={2}>
+                    <Typography variant='body2' gutterBottom>
+                      c4cneu.com is the public facing website for the Code4Community organization. The website was built with React.js, Typescript, and Material UI. The entire website was built over the course of a month. I led the development of the website and collaborated with another designer to wireframe the website. As both a developer and designer, I was responsible for implementing my Figma prototypes as React components with JSS. I have a keen understanding of the design handoff process and how to maximize developer and designer productivity.
+                    </Typography>
+                    <div className={styles.linksContainer}>
+                      <Link href='https://github.com/Code-4-Community/c4cneu.com'>
+                        See Code
+                      </Link>
+                                        &nbsp;|&nbsp;
+                      <Link href='https://c4cneu.com'>
+                        View Live
+                      </Link>
+                      &nbsp;|&nbsp;
+
+                      <Link href='https://www.figma.com/file/bA9eqApzabGM7noFk6QX3F/C4CNEU.com-Inital-Designs'>
+                        View Figma
+                      </Link>
+                    </div>
+                  </Box>
+
+                </div>
+              </div>
+            </Fade>
             <Fade>
               <Typography variant='h6'>development</Typography>
               <Typography variant='h3'>
