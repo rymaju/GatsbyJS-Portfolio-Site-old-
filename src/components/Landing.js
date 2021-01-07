@@ -12,7 +12,8 @@ const LandingButton = styled(Button)`
 const LandingFlex = styled.div`
     display: flex;
     align-items:center;
-    height:100vh;
+    min-height: 90vh;
+    margin-top: 60px;
 `
 const LandingContainer = styled.div`
     display: block;

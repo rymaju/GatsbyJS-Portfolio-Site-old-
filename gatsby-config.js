@@ -57,7 +57,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-webpack-size',
-    `gatsby-plugin-preact`
+    'gatsby-plugin-preact'
 
   ]
 }

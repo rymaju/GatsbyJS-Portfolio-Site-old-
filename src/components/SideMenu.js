@@ -10,7 +10,6 @@ import {
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const DropMenuAnchor = styled.div`
